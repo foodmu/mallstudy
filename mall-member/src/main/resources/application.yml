@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.222.25.138:3307/mall_ums
+    username: root
+    password: cmq04551
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/order/**.xml
+  global-config:
+    db-config:
+      id-type: auto
+server:
+  port: 8000

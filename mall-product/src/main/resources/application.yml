@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: cmq04551
+    url: jdbc:mysql://124.222.25.138:3307/mall_pms
+    name: com.mysql.cj.jdbc.Drive
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/product/**.xml
+  global-config:
+    db-config:
+      id-type: auto
+server:
+  port: 10000
