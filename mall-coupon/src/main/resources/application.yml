@@ -1,10 +1,16 @@
 spring:
+  application:
+    name: mall-coupon
   datasource:
     name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://124.222.25.138:3307/mall_sms
     username: root
     password: cmq04551
-
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#        service: coupon
 mybatis-plus:
   mapper-locations: classpath:/mapper/order/**.xml
   global-config:
