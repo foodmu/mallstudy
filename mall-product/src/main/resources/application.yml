@@ -4,10 +4,10 @@ spring:
     password: cmq04551
     url: jdbc:mysql://124.222.25.138:3307/mall_pms
     name: com.mysql.cj.jdbc.Drive
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
   application:
     name: mall-product
 

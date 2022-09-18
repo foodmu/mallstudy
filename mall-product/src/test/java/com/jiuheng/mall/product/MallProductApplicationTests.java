@@ -22,15 +22,15 @@ class MallProductApplicationTests {
         BrandEntity brandEntity = new BrandEntity();
         brandEntity.setName("华为");
         brandEntity.setDescript("nova7 128+8G");
-        // boolean save = brandService.save(brandEntity);
-//        if (save){
-//            System.out.println("保存成功......");
-//        }
+         boolean save = brandService.save(brandEntity);
+        if (save){
+            System.out.println("保存成功......");
+        }
         List<BrandEntity> list1 = brandService.list();
         list1.forEach(System.out::println);
-        brandService.removeById(1);
-        List<BrandEntity> list = brandService.list();
-        list.forEach(System.out::println);
+//        brandService.removeById(1);
+//        List<BrandEntity> list = brandService.list();
+//        list.forEach(System.out::println)
     }
 
 }
